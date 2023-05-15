@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <label for="toggle">
+        <input type="checkbox" id="toggle">
+        Dark theme
+      </label>
+      
+    </header>
+    <main>
+      <section id="about">
+        <h1>About Me</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius enim vel ante blandit, id dignissim dui congue. Sed aliquet commodo libero, a tincidunt enim faucibus a.</p>
+      </section>
+      <section id="projects">
+        <h1>My Projects</h1>
+
+        <div class="carousel">
+            <div class="slide active">
+              <img src="project1.png" alt="Artroom" >
+              <h3>Artroom</h3>
+              <p>Artroom is a platform created specifically for artists, a place where they can share any type of art, such as music, painting, sculpturing, 3D modeling and much more.</p>
+            </div>
+            <div class="slide">
+              <img src="project2.jpg" alt="Project 2">
+              <h3>Project 2</h3>
+              <p>Project 2 description goes here</p>
+            </div>
+            <div class="slide">
+              <img src="project3.jpg" alt="Project 3">
+              <h3>Project 3</h3>
+              <p>Project 3 description goes here</p>
+            </div>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+          
+      </section>
+      <section id="contact">
+        <h1>Contact Me</h1>
+        <form action="submit-form.php" method="post">
+          <input type="text" name="name" placeholder="Name">
+          <input type="email" name="email" placeholder="Email">
+          <textarea name="message" placeholder="Message"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2023 My Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
